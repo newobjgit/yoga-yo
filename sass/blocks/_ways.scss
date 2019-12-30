@@ -1,0 +1,65 @@
+.ways {
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        
+        &-left {
+            flex: 0 1 50%;
+        }
+
+        &-right {
+            flex: 0 1 50%;
+
+            &__title {
+                margin-bottom: 100px;
+                line-height: 60px;
+            }
+
+            &__text {
+                margin-left: 100px;
+                opacity: 0.65;
+                line-height: 40px;
+                font-weight: 300;
+            }
+            
+            &__read-more {
+                margin-left: 70px;
+                margin-top: 50px;
+                a {
+                    color: #3cbef1;
+                    font-style: italic;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &-background {
+
+        z-index: -1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+
+        &__left {
+            background-image: url('../img/ways/body.png');
+            background-repeat: no-repeat;
+            width: 351px;
+            height: 445px;
+            position: relative;
+            bottom: 350px;
+            right: 270px;
+
+        }
+
+        &__right {
+            background-image: url('../img/ways/tree_right.png');
+            background-repeat: no-repeat;
+            width: 204px;
+            height: 335px;
+            position: relative;
+            bottom: 110px;
+
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.whats-on {
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+            flex: 0 1 50%;
+        }
+
+        &-right {
+            flex: 0 1 50%;
+
+            &__title {
+                text-align: center;
+                margin-bottom: 70px;
+            }
+
+            &-list {
+                list-style-image: url("../img/whats-on/ceklist.png");
+                display: flex;
+                flex-direction: column;
+                margin-left: 60px;
+
+                &__item {
+                    margin-bottom: 30px;
+                }
+
+                &-item {
+                    &__title {
+                        opacity: 0.75;
+                        color: #000000;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    &__description {
+                        opacity: 0.65;
+                        color: #000000;
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-background {
+            position: absolute;
+            z-index: -1;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        &__left {
+            background-image: url('../img/whats-on/left.png');
+            background-repeat: no-repeat;
+            height: 375px;
+            width: 250px;
+            position: relative;
+            left: -50px;
+            top: 160px;
+            
+        }
+
+        &__right {
+            background-image: url('../img/whats-on/right.png');
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 488px;
+            position: relative;
+            top: -150px;
+        }
+    }
+
+    &-logo {
+        display: block;
+    }
+}

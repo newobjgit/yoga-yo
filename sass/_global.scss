@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+* {
+    font-family: "Fivo Sans";
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 125px;
+    height: 40px;
+    color: #fff;
+    border-radius: 21px;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+
+.global-title {
+    color: $primary-color;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.global-description {
+    color: #000000;
+    font-weight: 300;
+    opacity: 0.65;
+    line-height: 40px;
+}
+
+section {
+    margin-bottom: 250px;
+}

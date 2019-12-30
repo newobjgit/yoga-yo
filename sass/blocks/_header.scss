@@ -1,0 +1,91 @@
+.header {
+    background: url('../img/header/header-top.jpg') no-repeat top center;
+    height: 1333px;
+    background-size: 100%;
+
+    &-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 50px;
+
+        &__logo {
+            flex: 0 1 550px;
+            color: $red;
+            font-size: 32px;
+            font-family: "Fivo Sans - Heavy";
+        }
+    }
+
+    &-nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        width: 400px;
+
+        &__item {
+            a {
+                color: $blue;
+                font-size: 18px;
+                opacity: 0.5;
+                text-decoration: none;
+            }
+    
+            a.active {
+                color: $red;
+                opacity: 1;
+                font-weight: 700;
+            }
+    
+        }
+
+    }
+
+    &-menu__auth {
+        background-color: $red;        
+    }
+    
+    &-menu-auth {
+        margin-left: 100px;
+        
+    }
+
+    &-content{
+        margin-top: 100px;        
+        margin-left: 100px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+
+        &__text {
+            width: 450px;
+        }
+
+        &-toolbar {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            button {
+                width: 240px;
+                height: 80px;
+                border-radius: 40px;
+            }
+
+            &__service {
+                background-color: $red;
+                box-shadow: -14px 17px 24px 1px rgba(226, 88, 91, 0.45), 0 0 7px rgba(255, 255, 255, 0.35);
+            }
+
+            &__signUp {
+                background-color: transparent;
+                border: 2px solid $red;
+                color: $red;
+            }
+        }
+    }
+
+
+}
