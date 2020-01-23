@@ -15,6 +15,39 @@
             font-size: 32px;
             font-family: "Fivo Sans - Heavy";
         }
+
+        &__auth {
+            background-color: $red;
+        }
+    }
+
+    &-nav {
+        margin-right: 100px;
+
+        &-ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            width: 400px;
+    
+            &__item {
+                a {
+                    color: $blue;
+                    font-size: 18px;
+                    opacity: 0.5;
+                    text-decoration: none;
+                }
+        
+                a.active {
+                    color: $red;
+                    opacity: 1;
+                    font-weight: 700;
+                }
+        
+            }
+    
+        }
     }
 
     &-nav-ul {
@@ -40,15 +73,6 @@
     
         }
 
-    }
-
-    &-menu__auth {
-        background-color: $red;        
-    }
-    
-    &-menu-auth {
-        margin-left: 100px;
-        
     }
 
     &-content{
@@ -87,5 +111,17 @@
         }
     }
 
+
+}
+
+@media (min-width : 1224px) and (max-width: 1600px) {
+    .header {
+        &-content {
+            margin-left: 175px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
 
 }

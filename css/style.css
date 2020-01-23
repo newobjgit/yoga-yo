@@ -85,6 +85,14 @@ section {
   font-family: "Fivo Sans - Heavy";
 }
 
+.header-menu__auth {
+  background-color: #ff6a6d;
+}
+
+.header-nav {
+  margin-right: 100px;
+}
+
 .header-nav-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,12 +121,32 @@ section {
   font-weight: 700;
 }
 
-.header-menu__auth {
-  background-color: #ff6a6d;
+.header-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  width: 400px;
 }
 
-.header-menu-auth {
-  margin-left: 100px;
+.header-nav-ul__item a {
+  color: #1c2056;
+  font-size: 18px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header-nav-ul__item a.active {
+  color: #ff6a6d;
+  opacity: 1;
+  font-weight: 700;
 }
 
 .header-content {
@@ -167,6 +195,12 @@ section {
   background-color: transparent;
   border: 2px solid #ff6a6d;
   color: #ff6a6d;
+}
+
+@media (min-width: 1224px) and (max-width: 1600px) {
+  .header-content {
+    margin-left: 175px;
+  }
 }
 
 .choose-name {
