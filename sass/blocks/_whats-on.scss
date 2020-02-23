@@ -77,3 +77,25 @@
         display: block;
     }
 }
+
+@media (max-width: 1600px) {
+    .whats-on {
+        &-background {
+            &__right {
+                display: none;
+            }
+            &__left {
+                display: none;
+            } 
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .whats-on-wrapper {
+        flex-direction: column-reverse;
+    }
+    .whats-on-wrapper-right-list {
+        padding-left: 0;
+    }
+}

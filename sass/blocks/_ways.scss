@@ -63,3 +63,30 @@
         }
     }
 }
+
+@media (max-width: 1600px) {
+    .ways {
+        &-background {
+            &__right {
+                display: none;
+            }
+            &__left {
+                display: none;
+            } 
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .ways-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .ways-wrapper-right__text {
+        margin-left: 0;
+    }
+
+    .ways-wrapper-right__title {
+        text-align: center;
+    }
+}

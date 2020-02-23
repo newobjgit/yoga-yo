@@ -1,0 +1,85 @@
+.main {
+    background: url('../img/header/header-top.jpg') no-repeat top center;
+    height: 1333px;
+    background-size: 100%;
+    margin-bottom: 0 !important;
+
+    &-content{
+        padding-top: 125px;        
+        margin-left: 100px;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+
+        &__text {
+            max-width: 450px;
+        }
+
+        &-toolbar {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            button {
+                width: 240px;
+                height: 80px;
+                border-radius: 40px;
+            }
+
+            &__service {
+                background-color: $red;
+                box-shadow: -14px 17px 24px 1px rgba(226, 88, 91, 0.45), 0 0 7px rgba(255, 255, 255, 0.35);
+            }
+
+            &__signUp {
+                background-color: transparent;
+                border: 2px solid $red;
+                color: $red;
+            }
+        }
+    }
+}
+
+@media (min-width : 1224px) and (max-width: 1600px) {
+    .main {
+        &-content {
+            margin-left: 175px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .main {
+        background-size: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        height: 1000px;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+
+    .main-content-toolbar {
+        flex-direction: column;
+        align-items: center;
+        :first-child {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        height: 1150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main {
+        height: 1300px;
+    }
+}

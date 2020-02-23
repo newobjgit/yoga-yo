@@ -10,7 +10,7 @@
         }
 
         &__description {
-            width: 650px;
+            max-width: 650px;
             text-align: center;
         }
 
@@ -45,5 +45,16 @@
                 text-align: center;
             }
         }
+    }
+}
+
+@media (max-width: 900px) {
+    .choose-content {
+        flex-direction: column;
+    }
+
+    .choose-content__card {
+        width: auto;
+        margin-bottom: 25px;
     }
 }

@@ -36,3 +36,16 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .power-wrapper {
+        flex-direction: column;
+    }
+    .power-wrapper-left__text {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .power-wrapper-left__title {
+        text-align: center;
+    }
+}
